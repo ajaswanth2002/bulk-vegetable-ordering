@@ -19,7 +19,7 @@ function App() {
   }, [cart]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform">
         <ToastContainer position="top-center" autoClose={2000} />
       <Routes>
         <Route
