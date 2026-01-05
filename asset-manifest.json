@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/css/main.2f7d0bdb.css",
-    "main.js": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/js/main.ca2f6f51.js",
+    "main.css": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/css/main.3d0fa226.css",
+    "main.js": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/js/main.60f5bd27.js",
     "index.html": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/index.html",
-    "main.2f7d0bdb.css.map": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/css/main.2f7d0bdb.css.map",
-    "main.ca2f6f51.js.map": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/js/main.ca2f6f51.js.map"
+    "main.3d0fa226.css.map": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/css/main.3d0fa226.css.map",
+    "main.60f5bd27.js.map": "/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform/static/js/main.60f5bd27.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f7d0bdb.css",
-    "static/js/main.ca2f6f51.js"
+    "static/css/main.3d0fa226.css",
+    "static/js/main.60f5bd27.js"
   ]
 }
