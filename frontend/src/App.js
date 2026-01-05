@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Payment from "./pages/Payment";
@@ -13,31 +14,26 @@ function App() {
     return saved ? JSON.parse(saved) : {};
   });
 
-  // 🔐 Persist cart
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   return (
-    <BrowserRouter basename="/FreshKart-Bulk-Fruit-Vegetable-Ordering-Platform">
-        <ToastContainer position="top-center" autoClose={2000} />
-      <Routes>
-        <Route
-          path="/"
-          element={<Home cart={cart} setCart={setCart} />}
-        />
+    <>
+      <ToastContainer position="top-center" autoClose={2000} />
 
+      <Routes>
+        <Route path="/" element={<Home cart={cart} setCart={setCart} />} />
         <Route
           path="/cart"
           element={<Cart cart={cart} setCart={setCart} products={products} />}
         />
-
         <Route
           path="/payment"
           element={<Payment cart={cart} setCart={setCart} products={products} />}
         />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
