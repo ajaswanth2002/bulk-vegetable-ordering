@@ -1,0 +1,137 @@
+/* HERO SECTION */
+.hero {
+  height: 380px;                 /* NOT full screen */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 36px 64px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-overlay p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* FILTER SECTION */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.filter-section button {
+  padding: 10px 28px;
+  border-radius: 999px;
+  border: none;
+  font-weight: bold;
+  background: #fde68a; /* light orange */
+  color: #7c2d12;
+  cursor: pointer;
+}
+
+.filter-section .active {
+  background: #fb923c;
+  color: white;
+}
+
+/* PRODUCT GRID */
+.home {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* CART CONTROLS */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cart-controls button {
+  width: 34px;
+  height: 34px;
+  background-color: #fed7aa; /* light orange */
+  color: #7c2d12;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-controls button:hover {
+  background-color: #fdba74;
+}
+
+.cart-controls span {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+/* GO TO CART BUTTON */
+.go-to-cart {
+  position: sticky;              /* stays visible while scrolling */
+  bottom: 20px;
+  margin: 30px auto 10px;
+  display: block;
+
+  padding: 14px 28px;
+  background: #fb923c;           /* orange */
+  color: white;
+  border: none;
+  border-radius: 999px;          /* pill shape */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.go-to-cart:hover {
+  background: #f97316;           /* darker orange */
+  transform: translateY(-2px);
+}

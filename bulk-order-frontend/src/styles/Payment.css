@@ -1,0 +1,157 @@
+.payment-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff7ed;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.payment-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7c2d12;
+}
+
+.payment-container input,
+.payment-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.payment-container textarea {
+  resize: none;
+  height: 90px;
+}
+
+.payment-container h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* SUMMARY */
+.pay-summary-box {
+  margin-top: 20px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* QTY CONTROLS */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-controls button {
+  width: 32px;
+  height: 32px;
+  background: #fed7aa;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qty-controls span {
+  font-weight: bold;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #000;
+  padding-top: 12px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* ACTION BUTTONS */
+.payment-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.back-btn {
+  flex: 1;
+  padding: 12px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pay-btn {
+  flex: 2;
+  padding: 12px;
+  background: #fb923c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #f97316;
+}
+
+
+/* ITEM NAME */
+.item-name {
+  font-size: 14px;          /* ⬇ smaller item text */
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.item-mult {
+  font-size: 13px;          /* ⬇ smaller × quantity */
+  color: #6b7280;
+}
+
+/* QTY CONTROLS */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* + / - BUTTONS */
+.qty-controls button {
+  width: 28px;
+  height: 28px;
+  font-size: 16px;          /* ⬇ smaller symbol */
+  font-weight: bold;
+  background: #fed7aa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* QUANTITY NUMBER */
+.qty-number {
+  font-size: 15px;          /* 👈 slightly bigger than item text */
+  font-weight: 600;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* PRICE */
+.item-total {
+  font-size: 15px;
+  font-weight: 600;
+}

@@ -1,0 +1,47 @@
+const products = [
+  // VEGETABLES
+  { id: 1,  category: "vegetable", name: "Tomato", price: 20, img: "https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 2,  category: "vegetable", name: "Potato", price: 18, img: "https://plus.unsplash.com/premium_photo-1724256031338-b5bfba816cfd?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 3,  category: "vegetable", name: "Onion", price: 25, img: "https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 4,  category: "vegetable", name: "Carrot", price: 30, img: "https://images.unsplash.com/photo-1576181256399-834e3b3a49bf?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 5,  category: "vegetable", name: "Cabbage", price: 22, img: "https://images.unsplash.com/photo-1611105637889-3afd7295bdbf?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 6,  category: "vegetable", name: "Cauliflower", price: 28, img: "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 7,  category: "vegetable", name: "Brinjal", price: 35, img: "https://images.unsplash.com/photo-1639428134238-b548770d4b77?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dt" },
+  { id: 8,  category: "vegetable", name: "Lady Finger", price: 40, img: "https://images.unsplash.com/photo-1664289242854-e99d345cfa92?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 9,  category: "vegetable", name: "Spinach", price: 15, img: "https://plus.unsplash.com/premium_photo-1701699257548-8261a687236f?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }, 
+  { id: 10,  category: "vegetable", name: "Green Chilli", price: 50, img: "https://images.unsplash.com/photo-1576763595295-c0371a32af78?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 11,  category: "vegetable", name: "Beetroot", price: 32, img: "https://images.unsplash.com/photo-1593105544559-ecb03bf76f82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 12,  category: "vegetable", name: "Capsicum", price: 45, img: "https://plus.unsplash.com/premium_photo-1675731117950-089d3b3325d7?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 13,  category: "vegetable", name: "Radish", price: 20, img: "https://images.unsplash.com/photo-1585369496178-144fd937f249?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 14,  category: "vegetable", name: "Pumpkin", price: 18, img: "https://images.unsplash.com/photo-1692680919402-95fc56f99225?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 15,  category: "vegetable", name: "Cucumber", price: 25, img: "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 16,  category: "vegetable", name: "Sweet Corn", price: 40, img: "https://images.unsplash.com/photo-1675501342249-bdaaeb27c5cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 17,  category: "vegetable", name: "Peas", price: 60, img: "https://as2.ftcdn.net/v2/jpg/01/98/58/99/1000_F_198589944_d8zp9S55wWMy03cC1oHDYI5ZB1qAdYj6.jpg" },
+  { id: 18,  category: "vegetable", name: "Garlic", price: 120, img: "https://as2.ftcdn.net/v2/jpg/04/97/66/75/1000_F_497667519_ae13UCMJHdyd6Hu7OJkssy3caQB8xk1B.jpg" },
+  { id: 19,  category: "vegetable", name: "Ginger", price: 90, img: "https://as2.ftcdn.net/v2/jpg/03/84/94/13/1000_F_384941354_Vv0UJzPSCDTfMRldVp68HlECb9ZEhhA3.jpg" },
+  { id: 20,  category: "vegetable", name: "Mushroom", price: 70, img: "https://as1.ftcdn.net/v2/jpg/04/49/75/22/1000_F_449752272_vUqzIPP0DGb6Ww9QtWXBVaEmRBgtXMZ3.jpg" },
+
+  // FRUITS
+  { id: 21,  category: "fruit",name: "Apple", price: 120, img: "https://as1.ftcdn.net/v2/jpg/02/36/88/12/1000_F_236881295_odo9H1vtTZUvewumPdeRE4tHUtVa2UJg.jpg" },
+  { id: 22,  category: "fruit",name: "Banana", price: 45, img: "https://as1.ftcdn.net/v2/jpg/02/15/78/44/1000_F_215784483_BPQrfgtWwgTEQh6G0U3NocKwoCyuJ8BL.jpg" },
+  { id: 23,  category: "fruit",name: "Orange", price: 80, img: "https://as2.ftcdn.net/v2/jpg/00/21/36/25/1000_F_21362543_1Eayj8UXbDKIY4VMt5IC3QmLrAGccO9U.jpg" },
+  { id: 24,  category: "fruit",name: "Grapes", price: 90, img: "https://as2.ftcdn.net/v2/jpg/01/70/30/23/1000_F_170302326_JF04zqddOaGysqLhqyzPiIJ5KagIRAIb.jpg" },
+  { id: 25,  category: "fruit",name: "Mango", price: 150, img: "https://as2.ftcdn.net/v2/jpg/01/16/74/99/1000_F_116749966_1poTFn8E9P9X4aMZCYTzbNbF9Uyc24gt.jpg" },
+  { id: 26,  category: "fruit",name: "Papaya", price: 40, img: "https://as1.ftcdn.net/v2/jpg/02/74/86/68/1000_F_274866843_CJVRqz9WwOJniePl3x8L1fm3fNG49UzC.jpg" },
+  { id: 27,  category: "fruit",name: "Pineapple", price: 60, img: "https://as2.ftcdn.net/v2/jpg/00/64/24/11/1000_F_64241145_W6PsEFSTsyV4pvRm3of9FKqH8myuV4Kr.jpg" },
+  { id: 28,  category: "fruit",name: "Watermelon", price: 25, img: "https://as2.ftcdn.net/v2/jpg/00/64/24/11/1000_F_64241145_W6PsEFSTsyV4pvRm3of9FKqH8myuV4Kr.jpg" },
+  { id: 29,  category: "fruit",name: "Pomegranate", price: 110, img: "https://as2.ftcdn.net/v2/jpg/00/64/24/11/1000_F_64241145_W6PsEFSTsyV4pvRm3of9FKqH8myuV4Kr.jpg" },
+  { id: 30,  category: "fruit",name: "Guava", price: 50, img: "https://as1.ftcdn.net/v2/jpg/02/11/93/20/1000_F_211932013_r3eqjRtkDudDw1KyNfDBcbnEsT6oH5Qz.jpg" },
+  { id: 31,  category: "fruit",name: "Strawberry", price: 180, img: "https://as2.ftcdn.net/v2/jpg/17/43/37/89/1000_F_1743378927_igQ6NKncFeZpBUsVIlbOQUo5KEWQ838F.jpg" },
+  { id: 32,  category: "fruit",name: "Kiwi", price: 140, img: "https://as2.ftcdn.net/v2/jpg/02/83/83/09/1000_F_283830912_tFZpG0l6BzL45zCgGBkvtvZi0jp9GzDz.jpg" },
+  { id: 33,  category: "fruit",name: "Chikoo", price: 60, img: "https://as1.ftcdn.net/v2/jpg/08/45/11/04/1000_F_845110467_Kus9UZZC9ZYhn6LtY6wUvVN7vKxsjIFF.webp" },
+  { id: 34,  category: "fruit",name: "Custard Apple", price: 90, img: "https://as2.ftcdn.net/v2/jpg/02/81/77/03/1000_F_281770344_BN0oXeYmqEMaJrxBj9JFlsOphyK2z0G0.jpg" },
+  { id: 35,  category: "fruit",name: "Lemon", price: 70, img: "https://as2.ftcdn.net/v2/jpg/02/22/13/21/1000_F_222132175_QGYTh05ecNcquK4NfVtQ3evhSXoPnUG3.jpg" },
+  { id: 36,  category: "fruit",name: "Blueberry", price: 220, img: "https://as1.ftcdn.net/v2/jpg/02/08/78/58/1000_F_208785810_GNz6C50nANJPSpjPS0jfP25bVwjFdFSk.jpg" },
+  { id: 37,  category: "fruit",name: "Avocado", price: 160, img: "https://as2.ftcdn.net/v2/jpg/01/86/45/47/1000_F_186454781_xvM4VBS8bXKSPWdQZ6EGXRNls7QcgogU.jpg" },
+  { id: 38,  category: "fruit",name: "Peach", price: 130, img: "https://as2.ftcdn.net/v2/jpg/03/54/14/19/1000_F_354141949_91l3GhnyQBzN7p0kVBylIlLCOVqY3g82.jpg" },
+  { id: 39,  category: "fruit",name: "Pear", price: 100, img: "https://as2.ftcdn.net/v2/jpg/06/12/17/63/1000_F_612176312_WX4pUAFmPTfcQnLgvAKPImuRpuGkTQiL.jpg" },
+  { id: 40,  category: "fruit",name: "Plum", price: 120, img: "https://as2.ftcdn.net/v2/jpg/04/12/24/39/1000_F_412243965_yWkGeaA9JFlsR2JYG4z1Jl7XJQFaRUoG.jpg" }
+];
+
+export default products;
