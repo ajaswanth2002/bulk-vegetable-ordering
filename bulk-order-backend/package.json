@@ -1,5 +1,5 @@
 {
-  "name": "bulk-order-backend",
+  "name": "freshkart-backend",
   "version": "1.0.0",
   "description": "Bulk Vegetable/Fruit Ordering Backend",
   "main": "server.js",
